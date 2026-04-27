@@ -21,45 +21,299 @@ a {
     color: inherit;
 }
 
-main {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-section {
-    margin: 3rem 0;
-}
 
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     margin-bottom: 1rem;
 }
 
 
-/* Puedes usar esto si quieres centrar contenido */
-/* .container {
-    margin: 0 auto;
-} */
 
+
+
+
+.header__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    padding-right: 1rem;
+    color: #ffffff;
+
+}
+
+.btn {
+    background-color: rgba(61, 0, 0, 0.5);
+    padding: 0.5rem;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px #570401;
+}
+
+.btn:hover {
+    background-color: rgba(124, 24, 24, 0.5);
+}
+
+.nav__list {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__list li {
+    list-style: none;
+}
+
+.nav__list li a:hover {
+    text-decoration: underline;
+    color: rgb(151, 0, 0);
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 5rem;
+}
+
+.hero {
+    background-image: url("../img/img-2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10rem;
+
+
+}
+
+.hero__overlay {
+    text-align: center;
+}
+
+.hero__overlay h2 {
+    font-size: 8rem;
+}
+
+.hero__overlay p,
+.hero__overlay a {
+    font-size: 2rem;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(43, 43, 43);
+    padding: 3rem;
+}
+
+.events__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+
+}
+
+.events__table tr {
+    color: #ffffff;
+    text-align: left;
+}
+
+.events__table th,
+.events__table td {
+    padding: 12px 15px;
+    border: 1px solid #860000;
+}
+
+
+.events__table tbody tr td button {
+    background-color: rgba(58, 58, 58, 0.5);
+    color: #f5f5f5;
+    padding: 0.4rem;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.events__table tbody tr td button:hover {
+    background-color: rgba(141, 6, 6, 0.329);
+    color: #f5f5f5;
+    width: 100%;
+
+}
+
+.events__table thead {
+    background-color: rgba(184, 18, 18, 0.5);
+}
+
+.color2 {
+    background-color: rgba(27, 26, 26, 0.5);
+}
+
+.color3 {
+    background-color: rgba(184, 18, 18, 0.5);
+
+}
+
+.about {
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    place-items: center;
+
+}
+
+.about__content img {
+    min-width: 350px;
+    width: 70%;
+    height: auto;
+    grid-column: 2;
+    border: 2px solid #570401;
+}
+
+.about__content article {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.about__content ul {
+    list-style: none;
+}
+
+
+.media {
+    padding: 1rem;
+}
+
+.media2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+}
+
+.video {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    height: auto;
+    place-items: center;
+    justify-content: center;
+
+}
+
+
+
+.media__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.media__grid img {
+    border-radius: 12px;
+    box-shadow: 12px 12px 12px #0147424f;
+    width: 15rem;
+    height: 10rem;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.media__grid img:hover {
+    transform: scale(1.2);
+
+}
+
+.about__content figure {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.menu-toggle {
+    display: none;
+}
+
+
+.footer__content {
+    border-top: 2px solid #570401;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    padding-bottom: 4rem;
+    justify-content: space-around;
+}
+
+.footer__content ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
 
 @media (max-width: 768px) {
-
-    body {
-        font-size: 14px;
+    .media__grid{
+        grid-column: 1/3;
+    }
+    .video{
+        display: none;
+    }
+    .nav__list{
+        display: none;
+    }
+    .about__content{
+        display: flex;
+        flex-direction: column;
     }
 
-    main {
-        width: 95%;
-    }
+    .menu-toggle {
+        display: block;
+        padding: 1rem;
+        background-color: rgba(58, 58, 58, 0.5);
+        color: white;
 
-    section {
-        margin: 2rem 0;
     }
+    .hero__overlay h2{
+        font-size: 3rem;
+    }
+    .none{
+        display: none;
+    }
+    .events {
+    padding: 0;
+}
 
-    /* Hint clave */
-    /* piensa en:
-       - menús colapsables
-       - layouts en columna
-       - imágenes adaptativas
-    */
 }

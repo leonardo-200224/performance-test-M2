@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,13 @@
     <link rel="shortcut icon" href="./assets/icons/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
 
     <!-- HEADER -->
     <header class="header">
         <div class="container header__content">
-            <h1 class="logo">Shattered Riffs</h1>
+            <h1 class="logo"><img src="./assets/icons/logo.ico" alt=""> Shattered Riffs</h1>
 
             <!-- Nav for desktop / hamburger for mobile -->
             <nav class="nav">
@@ -43,34 +45,37 @@
         <!-- EVENTS -->
         <section id="events" class="events container">
             <h2>Upcoming Events</h2>
+            <hr><br>
 
             <!-- Extra points: table -->
             <table class="events__table">
+
                 <thead>
                     <tr>
                         <th>Date</th>
-                        <th>City</th>
-                        <th>Venue</th>
+                        <th class="none">City</th>
+                        <th class="none">Venue</th>
                         <th>Tickets</th>
                     </tr>
                 </thead>
+
                 <tbody>
-                    <tr>
+                    <tr class="color2">
                         <td>15 May</td>
-                        <td>Madrid</td>
-                        <td>Sala Sol</td>
+                        <td class="none">Madrid</td>
+                        <td class="none">Sala Sol</td>
                         <td><button>Buy</button></td>
                     </tr>
-                    <tr>
+                    <tr class="color3">
                         <td>18 May</td>
-                        <td>Barcelona</td>
-                        <td>Razzmatazz</td>
+                        <td class="none">Barcelona</td>
+                        <td class="none">Razzmatazz</td>
                         <td><button>Buy</button></td>
                     </tr>
                     <tr>
                         <td>22 May</td>
-                        <td>Valencia</td>
-                        <td>Moon Club</td>
+                        <td class="none">Valencia</td>
+                        <td class="none">Moon Club</td>
                         <td><button>Buy</button></td>
                     </tr>
                 </tbody>
@@ -80,10 +85,10 @@
         <!-- ABOUT -->
         <section id="about" class="about container">
             <h2>About the Band</h2>
+            <hr> <br>
 
             <div class="about__content">
-                <img src="./assets/img/img-1.jpg" alt="Band photo">
-
+                <img src="./assets/img/img-9.jpg" alt="">
                 <article>
                     <p>
                         Shattered Riffs is a high-energy rock band known for powerful live performances
@@ -103,34 +108,49 @@
 
         <!-- MEDIA -->
         <section id="media" class="media container">
-            <h2>Multimedia</h2>
 
-            <div class="media__grid">
-                <img src="./assets/img/img-2.jpg" alt="">
-                <img src="./assets/img/img-3.jpg" alt="">
-                <img src="./assets/img/img-4.jpg" alt="">
-                <img src="./assets/img/img-5.jpg" alt="">
-                <img src="./assets/img/img-6.jpg" alt="">
-                <img src="./assets/img/img-7.jpg" alt="">
+            <h2>Multimedia</h2>
+            <hr><br>
+            <div class="media2">
+                <div class="media__grid">
+                    <img src="./assets/img/img-2.jpg" alt="">
+                    <img src="./assets/img/img-3.jpg" alt="">
+                    <img src="./assets/img/img-4.jpg" alt="">
+                    <img src="./assets/img/img-5.jpg" alt="">
+                    <img src="./assets/img/img-6.jpg" alt="">
+                    <img src="./assets/img/img-7.jpg" alt="">
+                </div>
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Uz1xHdp5ASI?si=OMoZFKSXW7sAiWb1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
+
+
+
         </section>
 
     </main>
 
     <!-- FOOTER -->
     <footer id="contact" class="footer">
+
         <div class="container footer__content">
             <p>© <span id="year"></span> Shattered Riffs</p>
 
             <!-- Another possible list -->
             <ul class="social">
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Spotify</a></li>
-                <li><a href="#">YouTube</a></li>
+                <li><a href="https://www.instagram.com/rockthenighteurope/reels/">Instagram</a></li>
+                <li><a href="https://open.spotify.com/intl-es/track/3J9NEWkd9Cx1MwSSvDySkL">Spotify</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Uz1xHdp5ASI&list=RDUz1xHdp5ASI&start_radio=1">YouTube</a></li>
             </ul>
         </div>
     </footer>
 
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
